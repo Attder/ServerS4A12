@@ -21,5 +21,7 @@ namespace DfoServer.Infrastructure
         }
 
         public static string SchemaFilePath => Path.Combine(BaseDirectory, "Sqlite", "item_schema.sql");
+
+        public static string ChannelInfoFilePath => Path.Combine(BaseDirectory, "channel_info.etc");
     }
 }
