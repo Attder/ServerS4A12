@@ -26,4 +26,4 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout main
           git merge upstream/main --allow-unrelated-histories -m "🔄 Auto-sync from upstream" || echo "已是最新"
-          git push origin main || git push --force origin main
+          git push "https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/Attder/ServerS4A12.git" main --force
